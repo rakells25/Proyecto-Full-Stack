@@ -17,7 +17,7 @@ export class User {
 
 export class UserCrudService {
 
-  endpoint = 'http://localhost:8080/api/bicycles/';
+  endpoint = 'http://localhost:8080/api/productos/';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -60,7 +60,7 @@ export class UserCrudService {
     return this.httpClient.delete<User[]>(this.endpoint + '/' + idproducto, this.httpOptions)
       .pipe(
         tap(_ => console.log(`User deleted: ${idproducto}`)),
-        catchError(this.handleError<User[]>('Delete protuct'))
+        catchError(this.handleError<User[]>('Delete user'))
       );
   }
 

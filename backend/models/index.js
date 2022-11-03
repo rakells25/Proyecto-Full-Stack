@@ -18,5 +18,5 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.bicycles = require ("./bicycle.model.js") (sequelize, Sequelize) ;
+db.productos = require ("./producto.model.js") (sequelize, Sequelize) ;
 module.exports = db;

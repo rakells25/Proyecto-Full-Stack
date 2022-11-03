@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MalabaresService } from '../services/malabares.service';
+import { ProductosService } from '../services/productos.service';
 
 import { UserCrudService } from './../services/user-crud.service';
 
@@ -11,34 +11,37 @@ import { UserCrudService } from './../services/user-crud.service';
 })
 export class HomePage {
 
-  malabares: any = [];
+  productos: any = [];
   producto: any = [];
+
+  textoBuscar: any;
 
 
   //constructor(private router: Router) {}
 
-  constructor(private malabaresService: MalabaresService, private userCrudService: UserCrudService, private router: Router) {}
+  constructor(private productosService: ProductosService, private userCrudService: UserCrudService, private router: Router) {}
 
 
   ngOnInit(){
-    this.getAllMalabares();
+    this.getAllProductos();
   }
 
-  getAllMalabares(){
-    this.malabaresService.getMalabares().subscribe(response =>{
-      this.malabares = response;
+  getAllProductos(){
+    this.productosService.getProductos().subscribe(response =>{
+      this.productos = response;
+      console.log(response);
     });
   }
 
   ionViewDidEnter() {
-    this.malabaresService.getMalabares().subscribe((response) => {
-      this.malabares = response;
+    this.productosService.getProductos().subscribe((response) => {
+      this.productos = response;
     })
   }
 
   deleteProducto(producto) {
     if (window.confirm('¿Estás seguro de que quieres eliminar este producto?')) {
-      this.userCrudService.deleteUser(producto.nombre)
+      this.userCrudService.deleteUser(producto.idproducto)
       .subscribe(() => {
           this.ionViewDidEnter();
           console.log('Producto eliminado!')
@@ -46,6 +49,11 @@ export class HomePage {
       )
     }
   }
+prueba(){console.log("skjhbkgfsdjg")}
+  onSearchChange(event){
+    this.textoBuscar = event.datail.value;
+  }
+
 
  
 }

@@ -6,19 +6,19 @@ import { User } from './user-crud.service';
 @Injectable({
   providedIn: 'root'
 })
-export class MalabaresService {
+export class ProductosService {
 
   idproducto: string;
   nombre: string;
   descripcion: string;
   img: string;
 
-  endpoint = 'http://localhost:8080/api/bicycles';
+  endpoint = 'http://localhost:8080/api/productos';
 
 
   constructor(private httpClient: HttpClient) { }
 
-  getMalabares(){
+  getProductos(){
     return this.httpClient.get(this.endpoint);
   }
 

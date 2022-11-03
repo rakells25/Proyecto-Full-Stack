@@ -9,6 +9,8 @@ export class AppComponent {
   public appPages = [
 
     { title: 'Inicio', url: '/home', icon: 'home'},
+    { title: 'Contacto', url: '/contacto', icon: 'person'},
+    { title: 'Calendario', url: '/calendario', icon: 'calendar'}
 
 
   ];

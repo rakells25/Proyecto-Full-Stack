@@ -2,43 +2,39 @@
   <ion-toolbar>
     <ion-title>INICIO</ion-title>
   </ion-toolbar>
-  
-  <ion-toolbar color="mycolor">
-   <!--<ion-title>Catálogo</ion-title>-->
-  </ion-toolbar>
+  </ion-header>
+<ion-searchbar placeholder="Qué quiere buscar?" animated inputmode="text"
+  (ionChange)="onSearchChange($event)" debounce="250">
+</ion-searchbar>
 
-</ion-header>
 
 <ion-fab vertical="top" horizontal="end" slot="fixed">
-  <ion-fab-button routerLink="/create">
+  <ion-fab-button color= "secondary" routerLink="/create">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
 <ion-content>
-  <h3>PRODUCTOS</h3>
-  <ion-card *ngFor="let producto of malabares">
+  <h3 class="ion-padding">PRODUCTOS DISPONIBLES</h3>
+  <ion-card *ngFor="let producto of productos">
     <ion-item>
 
-      <ion-avatar slot="end">
+      <ion-button slot="end">
         <ion-icon clear (click)="deleteProducto(producto)" name="trash-outline"></ion-icon>
-      </ion-avatar>
+      </ion-button>
   
-      <ion-avatar slot="end">
-        <ion-icon routerLink="/update" name="create"></ion-icon>
-      </ion-avatar>
+      <ion-button [routerLink]="['/update/', producto.idproducto]" slot="end">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
 
     </ion-item>
-    <img src="../../assets/img/{{producto.img}}" />
+    <img class="ion-padding" src="../../assets/img/{{producto.img}}" />
     <ion-card-header>
       <ion-card-title>{{producto.nombre}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
    {{producto.descripcion}}
     </ion-card-content>
-
-
-    
   </ion-card>
 
 </ion-content>

@@ -2,7 +2,12 @@
 const express = require ("express");
 const cors = require("cors");
 
+var path = require('path');
+
 const app = express ();
+
+//public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 var corsOptions = {
   origin: "*"
@@ -29,11 +34,11 @@ db.sequelize.sync({ force : false }).then(() => {
 
 // simple route
 app.get ("/", (req , res) => {
-  res.json({message: "Bienvenido a la aplicación de Malabaracirco." });
+  res.json({message: "Bienvenido a la aplicación de Librería." });
 });
 
 
-require("./routes/bicycle.routes.js")(app);
+require("./routes/producto.routes.js")(app);
 
 // set port , listen for requests
 const PORT = process.env.PORT || 8080;

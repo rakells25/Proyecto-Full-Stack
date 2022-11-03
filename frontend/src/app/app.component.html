@@ -3,8 +3,9 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>MALABARACIRCO</ion-list-header>
-          <ion-note>malabares@malabaracirco.com</ion-note>
+          <ion-list-header><img class="ion-padding" width="100" height="85" src="../../assets/img/logo.png" />LIBRERÍA TEAM</ion-list-header>
+          <ion-note> </ion-note>
+          <br>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">

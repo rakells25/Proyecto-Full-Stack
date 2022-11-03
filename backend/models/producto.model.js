@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Bicycle = sequelize.define ("producto", {
+    const Producto = sequelize.define ("producto", {
       idproducto: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -16,8 +16,11 @@ module.exports = (sequelize, Sequelize) => {
 
       img: {
         type: Sequelize.STRING
+      },
+      filename: {
+        type: Sequelize.STRING
       }
     },{timestamp: false});
 
-    return Bicycle;
+    return Producto;
 };

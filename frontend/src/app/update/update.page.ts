@@ -26,12 +26,18 @@ export class UpdatePage implements OnInit {
   }
 
   ngOnInit() {
-    this.fetchUser(this.id);
+    
     this.updateUserFg = this.formBuilder.group({
       nombre: [''],
       descripcion: [''],
       img: ['']
-    })
+    });
+    console.log("inicio");
+    this.fetchUser(this.id);
+  }
+  
+  ionViewDidEnter() {
+    this.fetchUser(this.id);
   }
 
   fetchUser(id) {
