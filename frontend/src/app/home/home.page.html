@@ -3,9 +3,6 @@
     <ion-title>INICIO</ion-title>
   </ion-toolbar>
   </ion-header>
-<ion-searchbar placeholder="Qué quiere buscar?" animated inputmode="text"
-  (ionChange)="onSearchChange($event)" debounce="250">
-</ion-searchbar>
 
 
 <ion-fab vertical="top" horizontal="end" slot="fixed">
@@ -19,8 +16,8 @@
   <ion-card *ngFor="let producto of productos">
     <ion-item>
 
-      <ion-button slot="end">
-        <ion-icon clear (click)="deleteProducto(producto)" name="trash-outline"></ion-icon>
+      <ion-button slot="end" (click)="deleteProducto(producto)">
+        <ion-icon clear name="trash-outline"></ion-icon>
       </ion-button>
   
       <ion-button [routerLink]="['/update/', producto.idproducto]" slot="end">

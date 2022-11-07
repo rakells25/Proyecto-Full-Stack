@@ -49,10 +49,6 @@ export class HomePage {
       )
     }
   }
-prueba(){console.log("skjhbkgfsdjg")}
-  onSearchChange(event){
-    this.textoBuscar = event.datail.value;
-  }
 
 
  

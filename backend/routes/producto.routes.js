@@ -1,11 +1,9 @@
 module.exports = app => {
     const productos = require("../controllers/producto.controller.js");
-   var upload = require('../multer/upload');
-
-    var router = require("express").Router();
+   var router = require("express").Router();
 
    // Create a new Bicycle
-router.post("/", upload.single('file'), productos.create);
+router.post("/", productos.create);
 
 // Retrieve all Bicycles
 router.get("/", productos.findAll);

@@ -43,16 +43,16 @@ exports.findOne = (req, res) => {
 
   exports.update = (req, res) => {
     const id = req.params.id;
-    console.log(req.params.id + " ujagfsdu ");
+    console.log(req.params.id + " ");
 
   
     Producto.update(req.body, {
-      where: { id: id }
+      where: { idproducto: id }
     })
       .then(num => {
         if (num == 1) {
           res.send({
-            message: "Tutorial was updated successfully."
+            message: "It was updated successfully."
           });
         } else {
           res.send({
@@ -66,10 +66,6 @@ exports.findOne = (req, res) => {
         });
       });
   };
-
-
-
-  
   // if(req.body.status --- undefined){
   //   res.status(400).send({message: 'Debe rellenar los campos.'});
   //   return

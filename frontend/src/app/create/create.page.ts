@@ -3,6 +3,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder } from "@angular/forms";
 import { UserCrudService } from './../services/user-crud.service';
+import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-create',
@@ -22,7 +23,8 @@ export class CreatePage implements OnInit {
     private router: Router,
     public formBuilder: FormBuilder,
     private zone: NgZone,
-    private userCrudService: UserCrudService    
+    private userCrudService: UserCrudService,
+    public photoService: PhotoService    
   ) {
     this.userForm = this.formBuilder.group({
   
@@ -48,6 +50,9 @@ export class CreatePage implements OnInit {
     }
   }
 
+  addPhotoToGallery() {
+    this.photoService.addNewToGallery();
+  }
 
 
 }

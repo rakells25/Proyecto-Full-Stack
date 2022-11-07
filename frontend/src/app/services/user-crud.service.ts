@@ -17,7 +17,7 @@ export class User {
 
 export class UserCrudService {
 
-  endpoint = 'http://localhost:8080/api/productos/';
+  endpoint = 'http://localhost:8080/api/productos';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -48,10 +48,10 @@ export class UserCrudService {
       );
   }
 
-  updateUser(nombre, user: User): Observable<any> {
+  updateUser(id, user: User): Observable<any> {
     return this.httpClient.put(this.endpoint + '/' + JSON.stringify(user), this.httpOptions)
       .pipe(
-        tap(_ => console.log(`User updated: ${nombre}`)),
+        tap(_ => console.log(`User updated: ${id}`)),
         catchError(this.handleError<User[]>('Update user'))
       );
   }
