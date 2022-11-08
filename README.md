@@ -5,10 +5,12 @@ Pudiendo ver, insertar, modificar y eliminar los productos disponibles.
 Además tiene un menú desde donde se puede acceder a la página de contactos donde pueden ver los contactos del resto de tiendas de las distintas ubicaciones. además también tiene las opciones de ver otros contactos como el del almacén, servicio de reparto y servicio de seguridad.
 
 
+
 #Pre-requisitos 📋
 
 Visual studio code
 Xampp
+
 
 
 #Instalación 🔧
@@ -29,6 +31,7 @@ Una vez clicado en aceptar se habrá eliminado el producto y ya no será visible
 Para modificar un producto, debe clicar en el botón de modificar del producto que quiera modificar y le aparecerá el formulario con los datos correspondientes a ese producto donde podrás cambiar los campos deseados. Al pulsar en aceptar podemos ver en la página de inicio como se han modificado los datos del producto a los que hemos puesto.
 
 
+
 #Ejecutando las pruebas ⚙️
 
 Ejecutar el Xampp y crear la base de datos
@@ -36,6 +39,7 @@ Ejecutar el Xampp y crear la base de datos
 En el backend: node index.js
 
 En el frontend: ionic serve
+
 
 
 #Construido con 🛠️
@@ -46,6 +50,7 @@ En el frontend: ionic serve
 - Sequelize
 - Mysql
 - Visual Studio Code
+
 
 
 #Autores ✒️
