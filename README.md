@@ -8,7 +8,9 @@ Visual studio code
 Xampp
 
 #Da un ejemplo
+
 Instalación 🔧
+
 Para ejecutar la aplicación, debe ingresar al directorio backend con el siguiente comando: "cd backend". Una vez que lo haya ahí, el siguiente comando a usar es: "node index.js".
 
 En segundo lugar, regrese a la carpeta raíz: "cd ..". Después, acceda a la interfaz: "cd frontend". Por último, escriba: "ionic serve" para ejecutar el programa.
@@ -26,6 +28,7 @@ Para modificar un producto, debe clicar en el botón de modificar del producto q
 
 
 #Ejecutando las pruebas ⚙️
+
 Ejecutar el Xampp y crear la base de datos
 
 En el backend: node index.js
