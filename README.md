@@ -1,3 +1,51 @@
+#Presentation
+
+It is a project focused on the employees of a bookstore where they can keep track of the products available in the store. Being able to see, insert, modify and delete the available products. It also has a menu from where you can access the contacts page where you can see the contacts of the rest of the stores in the different locations. In addition, you also have the options to see other contacts such as the warehouse, delivery service and security service.
+
+#Pre-requisites 📋
+
+Visual studio code Xampp
+
+#Installation 🔧
+
+To run the application, you need to enter the backend directory with the following command: "cd backend". Once you have it there, the next command to use is: "node index.js".
+
+Second, go back to the root folder: "cd .." Then enter the interface: "cd frontend". Lastly, type: "ionic serve" to run the program.
+
+With this, you will be able to use the application correctly and view the product listing, insert, modify, delete and interact with the interfaces.
+
+If you want to enter a new one, click the button on the top right "+" to insert it.
+
+A form will appear where you can write the data to enter. Once done, click to send the data to the database and it will send you to the home page where you can see the inserted product.
+
+To delete a product, you must click on the delete button for that specific product and a window will appear where you must confirm that you want to delete that product. Once you click on accept, the product will be removed and it will no longer be visible.
+
+To modify a product, you must click on the modify button of the product you want to modify and the form will appear with the data corresponding to that product where you can change the desired fields. By clicking on accept we can see on the home page how the product data that we have put has been modified.
+
+#Running the tests ⚙️
+
+Run Xampp and create the database
+
+In the backend: node index.js
+
+On the frontend: ionic serve
+
+#Built with 🛠️
+
+ionic
+Node.js
+express.js
+Sequelize
+mysql
+Visual Studio Code
+#Authors ✒️
+
+Rachel Lopez Sanchez
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
 #Presentación
 
 Es un proyecto enfocado para los empleados de una librería donde puedan llevar un control de los productos disponibles en la tienda.
