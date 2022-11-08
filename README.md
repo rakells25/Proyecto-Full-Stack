@@ -48,8 +48,7 @@ On the frontend: ionic serve
 
 #POSTMAN
 
-https://identity.getpostman.com/browser-auth/success?code=9080497f0866caddabc6f29c6bac13c6187033d330a6046cfb1ea84a0165873c&redirect_uri=postman%3A%2F%2Fauth%2Fcallback
-
+https://www.postman.com/grey-zodiac-141901/workspace/fullstack/collection/24237782-13635ddc-cdf7-4be1-9fe1-993dae0e48e0?action=share&creator=24237782
 
 
 #Authors ✒️
