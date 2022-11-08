@@ -4,9 +4,11 @@ Full Stack Project
 
 It is a project focused on the employees of a bookstore where they can keep track of the products available in the store. Being able to see, insert, modify and delete the available products. It also has a menu from where you can access the contacts page where you can see the contacts of the rest of the stores in the different locations. In addition, you also have the options to see other contacts such as the warehouse, delivery service and security service.
 
+
 #Pre-requisites 📋
 
 Visual studio code Xampp
+
 
 #Installation 🔧
 
@@ -24,6 +26,7 @@ To delete a product, you must click on the delete button for that specific produ
 
 To modify a product, you must click on the modify button of the product you want to modify and the form will appear with the data corresponding to that product where you can change the desired fields. By clicking on accept we can see on the home page how the product data that we have put has been modified.
 
+
 #Running the tests ⚙️
 
 Run Xampp and create the database
@@ -31,6 +34,7 @@ Run Xampp and create the database
 In the backend: node index.js
 
 On the frontend: ionic serve
+
 
 #Built with 🛠️
 
@@ -40,6 +44,10 @@ express.js
 Sequelize
 mysql
 Visual Studio Code
+
+#POSTMAN
+
+
 #Authors ✒️
 
 Rachel Lopez Sanchez
