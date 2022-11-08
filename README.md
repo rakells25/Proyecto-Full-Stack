@@ -1,10 +1,7 @@
-#Malabaracirco
-Es un proyecto enfocado a una tienda de malabares donde se pueda llevar un control de los productos disponibles en la tienda.
-
-#Comenzando 🚀
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
-
-Mira Deployment para conocer como desplegar el proyecto.
+#Presentación
+Es un proyecto enfocado para los empleados de una librería donde puedan llevar un control de los productos disponibles en la tienda.
+Pudiendo ver, insertar, modificar y eliminar los productos disponibles.
+Además tiene un menú desde donde se puede acceder a la página de contactos donde pueden ver los contactos del resto de tiendas de las distintas ubicaciones. además también tiene las opciones de ver otros contactos como el del almacén, servicio de reparto y servicio de seguridad.
 
 #Pre-requisitos 📋
 Visual studio code
@@ -21,33 +18,13 @@ Ejecutar el backend y el frontend para visualizar la aplicación
 
 
 #Construido con 🛠️
-Visual studio code - Editor de código fuente
-Ionic - Framework
-Mysql - Sistema de gestión de bases de datos
+- Visual studio code
+- Ionic 
+- Angular
+- Mysql 
+- node
 
-#Contribuyendo 🖇️
-Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-
-#Versionado 📌
-Usamos SemVer para el versionado.
 
 #Autores ✒️
 Raquel López Sánchez
 
-#Licencia 📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
-
-#Expresiones de Gratitud 🎁
-Comenta a otros sobre este proyecto 📢
-Invita una cerveza 🍺 o un café ☕.
-Da las gracias 🤓.
-
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
