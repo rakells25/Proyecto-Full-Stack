@@ -38,16 +38,18 @@ On the frontend: ionic serve
 
 #Built with 🛠️
 
-ionic
-Node.js
-express.js
-Sequelize
-mysql
-Visual Studio Code
+- ionic
+- Node.js
+- express.js
+- Sequelize
+- mysql
+- Visual Studio Code
+
 
 #POSTMAN
 
 https://identity.getpostman.com/browser-auth/success?code=9080497f0866caddabc6f29c6bac13c6187033d330a6046cfb1ea84a0165873c&redirect_uri=postman%3A%2F%2Fauth%2Fcallback
+
 
 
 #Authors ✒️
@@ -110,6 +112,12 @@ En el frontend: ionic serve
 - Sequelize
 - Mysql
 - Visual Studio Code
+
+
+#POSTMAN
+
+https://identity.getpostman.com/browser-auth/success?code=9080497f0866caddabc6f29c6bac13c6187033d330a6046cfb1ea84a0165873c&redirect_uri=postman%3A%2F%2Fauth%2Fcallback
+
 
 
 
