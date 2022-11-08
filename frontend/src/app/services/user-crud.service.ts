@@ -49,7 +49,7 @@ export class UserCrudService {
   }
 
   updateUser(id, user: User): Observable<any> {
-    return this.httpClient.put(this.endpoint + '/' + JSON.stringify(user), this.httpOptions)
+    return this.httpClient.put(this.endpoint + '/' + id, JSON.stringify(user), this.httpOptions)
       .pipe(
         tap(_ => console.log(`User updated: ${id}`)),
         catchError(this.handleError<User[]>('Update user'))
